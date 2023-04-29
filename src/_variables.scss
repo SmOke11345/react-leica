@@ -1,0 +1,13 @@
+// Переменные
+
+$text-color: #000000;
+$font-h: 50px;
+$title-color: #797773;
+$font-p: 16px;
+$link-color: #e73639;
+
+%wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

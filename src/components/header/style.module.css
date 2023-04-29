@@ -1,0 +1,96 @@
+.nav, .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav, .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 180px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #d9d9d9;
+  transition: all 0.5s ease-in-out;
+}
+.btn a {
+  display: block;
+  padding: 20px 0;
+  color: #000000;
+  font-family: "Days One", sans-serif;
+}
+.btn a:hover {
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #b3adad;
+  transform: scale(1.05);
+}
+
+.container {
+  width: 1160px;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+}
+.header {
+  padding: 25px 40px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.burger {
+  display: none;
+  width: 54px;
+  cursor: pointer;
+}
+
+.nav {
+  width: 350px;
+}
+.nav a {
+  color: #e73639;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+.logo {
+  width: 150px;
+}
+
+.main_wrapper {
+  background: url("./img/main_bg 1.svg") no-repeat center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.module.css.map */

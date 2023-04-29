@@ -1,0 +1,22 @@
+@import '../../variables';
+@import '../../common';
+
+//.hero {
+//  align-items: ;
+//}
+
+.hero {
+    width: 510px;
+    display: grid;
+    gap: 10px;
+    padding: 210px 0;
+
+    &__title,
+    &__subtitle {
+        color: #ffffff;
+    }
+
+    &__subtitle {
+        width: 235px;
+    }
+}

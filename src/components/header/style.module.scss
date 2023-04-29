@@ -1,0 +1,45 @@
+@import '../../variables';
+@import '../../common';
+
+.header {
+    padding: 25px 40px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.burger {
+    display: none;
+    width: 54px;
+    cursor: pointer;
+}
+
+.nav {
+    @extend %wrapper;
+    width: 350px;
+
+    a {
+        color: $link-color;
+    }
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.logo {
+    width: 150px;
+}
+
+.main_wrapper {
+    background: url('./img/main_bg 1.svg') no-repeat center;
+    background-size: cover;
+}
+

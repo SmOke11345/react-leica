@@ -1,0 +1,67 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "Days One";
+  src: url("./font/DaysOne-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+form,
+a,
+p,
+ul,
+li,
+span,
+button,
+input {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: $text-color;
+  font-family: "Days One", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: $font-h;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  font-size: 20px;
+}
+
+p {
+  font-size: $font-p;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
