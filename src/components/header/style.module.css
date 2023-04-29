@@ -59,6 +59,11 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+}
 .burger {
   display: none;
   width: 54px;
@@ -70,10 +75,6 @@
 }
 .nav a {
   color: #e73639;
-}
-
-.show {
-  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +92,40 @@
 .main_wrapper {
   background: url("./img/main_bg 1.svg") no-repeat center;
   background-size: cover;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #797773;
+}
+.overlay .burger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.overlay .content_wrapper {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.overlay .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.show {
+  display: block;
 }
 
 /*# sourceMappingURL=style.module.css.map */

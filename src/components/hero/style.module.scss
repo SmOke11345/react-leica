@@ -1,10 +1,6 @@
 @import '../../variables';
 @import '../../common';
 
-//.hero {
-//  align-items: ;
-//}
-
 .hero {
     width: 510px;
     display: grid;
@@ -18,5 +14,16 @@
 
     &__subtitle {
         width: 235px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        padding: 150px 0;
+    }
+
+    .hero,
+    .btn {
+        width: 100%;
     }
 }

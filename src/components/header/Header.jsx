@@ -3,6 +3,7 @@ import React from 'react';
 import style from './style.module.css';
 import logo from './img/logo.svg';
 import burger from './img/burger.svg';
+import { Burger } from './Burger';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -18,15 +19,17 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className={style.content_wrapper}>
-                    <div
+                    <img
+                        src={burger}
+                        alt="burger_menu"
                         className={style.burger}
                         onClick={(event) => {
                             setIsOpen(!isOpen);
                             console.log(isOpen);
-                        }}>
-                        <img src={burger} alt="burger_menu" />
-                    </div>
-                    <nav className={`${style.nav} ${isOpen ? '' : 'show'}`}>
+                        }}
+                    />
+                    <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
+                    <nav className={style.nav}>
                         <div className={style.nav__item}>
                             <a href="/">Преимущества</a>
                         </div>

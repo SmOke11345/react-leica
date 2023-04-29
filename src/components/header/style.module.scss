@@ -6,6 +6,12 @@
     background: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+}
+
 .burger {
     display: none;
     width: 54px;
@@ -19,10 +25,6 @@
     a {
         color: $link-color;
     }
-}
-
-.show {
-    display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,3 +45,39 @@
     background-size: cover;
 }
 
+.overlay {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #797773;
+
+    .burger {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .content_wrapper {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 30px;
+    }
+}
+
+.show {
+    display: block;
+}

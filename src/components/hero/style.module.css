@@ -67,4 +67,14 @@
   width: 235px;
 }
 
+@media screen and (max-width: 576px) {
+  .hero {
+    padding: 150px 0;
+  }
+  .hero,
+.btn {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */
