@@ -25,7 +25,6 @@ export const Header = () => {
                         className={style.burger}
                         onClick={(event) => {
                             setIsOpen(!isOpen);
-                            console.log(isOpen);
                         }}
                     />
                     <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
