@@ -60,6 +60,9 @@
 .dignity .wrapper {
   margin: 60px 0 0 0;
 }
+.dignity:first-child {
+  margin-bottom: 180px;
+}
 
 .title {
   width: 530px;
@@ -80,6 +83,11 @@
   width: 400px;
 }
 
+@media screen and (max-width: 576px) {
+  .text p {
+    font-size: calc(20px - 4px);
+  }
+}
 @media screen and (max-width: 992px) {
   .dignity .wrapper {
     flex-direction: column;

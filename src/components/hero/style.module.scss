@@ -24,16 +24,6 @@
 
     &__subtitle {
         width: 306px;
-
-        p {
-            font-size: calc(#{$font-p} + 5px);
-        }
-    }
-
-    @media screen and (max-width: $medium) {
-        &__subtitle p {
-            font-size: $font-p;
-        }
     }
 }
 

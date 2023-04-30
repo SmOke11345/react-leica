@@ -7,6 +7,10 @@
   .wrapper {
 	margin: 60px 0 0 0;
   }
+
+  &:first-child {
+	margin-bottom: 180px;
+  }
 }
 
 .title {
@@ -27,6 +31,12 @@
 
 .text {
   width: 400px;
+}
+
+@media screen and (max-width: $small) {
+  .text p {
+	font-size: calc(#{$font-p} - 4px);
+  }
 }
 
 @media screen and (max-width: $large) {

@@ -1,7 +1,10 @@
 import { Header } from './components/header/Header';
-import style from './components/header/style.module.css';
 import { Hero } from './components/hero/Hero';
 import { Dignity } from './components/dignity/Dignity';
+import { Carousel } from './components/carousel/Carousel';
+
+import img from '../src/components/camera_img.svg';
+import style from './components/header/style.module.css';
 
 function App() {
     return (
@@ -12,6 +15,10 @@ function App() {
             </div>
             <main>
                 <Dignity />
+                <div>
+                    <img src={img} alt="Камера" />
+                </div>
+                <Carousel />
             </main>
         </>
     );
