@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactRemoveScroll from 'react-remove-scroll/dist/es2019/Combination';
 import style from './style.module.css';
 import burgerClose from './img/burger_close.svg';
+import { RemoveScroll } from 'react-remove-scroll';
 
 export const Burger = ({ isOpen, setIsOpen }) => {
     return (
-        <ReactRemoveScroll>
+        <RemoveScroll enabled={!!isOpen}>
             <div className={`${style.overlay} ${isOpen ? `${style.show}` : ''}`}>
                 <img
                     src={burgerClose}
@@ -26,6 +26,6 @@ export const Burger = ({ isOpen, setIsOpen }) => {
                     </nav>
                 </div>
             </div>
-        </ReactRemoveScroll>
+        </RemoveScroll>
     );
 };

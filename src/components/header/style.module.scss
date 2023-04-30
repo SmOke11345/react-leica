@@ -6,7 +6,7 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $medium) {
   .header {
 	padding: 15px;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $medium) {
   .nav {
 	display: none;
   }

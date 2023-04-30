@@ -2,7 +2,7 @@
 @import '../../common';
 
 .hero {
-    width: 510px;
+    width: 531px;
     display: grid;
     gap: 10px;
     padding: 210px 0;
@@ -12,12 +12,32 @@
         color: #ffffff;
     }
 
+    &__title h1 {
+        font-size: calc(#{$font-h} + 30px);
+    }
+
+    @media screen and (max-width: 768px) {
+        &__title h1 {
+            font-size: calc(#{$font-h} + 15px);
+        }
+    }
+
     &__subtitle {
-        width: 235px;
+        width: 306px;
+
+        p {
+            font-size: calc(#{$font-p} + 5px);
+        }
+    }
+
+    @media screen and (max-width: $medium) {
+        &__subtitle p {
+            font-size: $font-p;
+        }
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $small) {
     .hero {
         padding: 150px 0;
     }

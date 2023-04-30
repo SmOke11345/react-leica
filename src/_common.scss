@@ -1,56 +1,56 @@
-@import "./variables";
+@import './variables';
 
 .btn {
-  width: 180px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: #d9d9d9;
+    width: 180px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #d9d9d9;
 
-  a {
-    display: block;
-    padding: 20px 0;
-    color: $text-color;
-    font-family: "Days One", sans-serif;
+    a {
+        display: block;
+        padding: 20px 0;
+        color: $text-color;
+        font-family: 'Days One', sans-serif;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    transition: all 0.5s ease-in-out;
 
     &:hover {
-      color: #ffffff;
+        background-color: #b3adad;
+        transform: scale(1.05);
     }
-  }
-
-  transition: all 0.5s ease-in-out;
-
-  &:hover {
-    background-color: #b3adad;
-    transform: scale(1.05);
-  }
 }
 
 .container {
-  width: 1160px;
-  max-width: 100%;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+    width: 1160px;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-@media screen and (max-width: 992px) {
-  .container {
-    width: 980px;
-  }
+@media screen and (max-width: $large) {
+    .container {
+        width: 980px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 740px;
-  }
+@media screen and (max-width: $medium) {
+    .container {
+        width: 740px;
+    }
 }
 
-@media screen and (max-width: 576px) {
-  .container {
-    width: auto;
-  }
+@media screen and (max-width: $small) {
+    .container {
+        width: auto;
+    }
 }
 
 .wrapper {
-  @extend %wrapper;
+    @extend %wrapper;
 }

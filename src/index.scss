@@ -30,17 +30,22 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-size: $font-h;
     font-weight: 400;
 }
 
+h2 {
+    color: $title-color;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
-    h1,
-    h2,
-    h3 {
-        font-size: calc(#{$font-h} - 15px);
+    h1 {
+        font-size: $font-h;
+    }
+    h2 {
+        font-size: calc(#{$font-h} - 13px);
     }
 }
 
@@ -53,6 +58,7 @@ a {
 p {
     font-size: $font-p;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    line-height: 1.6em;
     font-weight: 500;
 }
 

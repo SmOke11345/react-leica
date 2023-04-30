@@ -1,0 +1,48 @@
+@import '../../variables';
+@import '../../common';
+
+.dignity {
+  margin: 60px 0 140px;
+
+  .wrapper {
+	margin: 60px 0 0 0;
+  }
+}
+
+.title {
+  width: 530px;
+  margin: 0 auto;
+
+  &::after {
+	content: '';
+	width: 150px;
+	height: 5px;
+	margin: 20px auto;
+	border-radius: 20px;
+	background-color: $link-color;
+	opacity: 0.5;
+	display: block;
+  }
+}
+
+.text {
+  width: 400px;
+}
+
+@media screen and (max-width: $large) {
+  .dignity {
+	.wrapper {
+	  flex-direction: column;
+	  gap: 20px;
+	}
+  }
+
+  .title {
+	width: auto;
+  }
+
+  .text {
+	width: auto;
+	text-align: center;
+  }
+}

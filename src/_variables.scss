@@ -1,13 +1,18 @@
 // Переменные
 
 $text-color: #000000;
-$font-h: 50px;
+$font-h: 35px;
 $title-color: #797773;
 $font-p: 16px;
 $link-color: #e73639;
 
+// Response
+$large: 992px;
+$medium: 768px;
+$small: 576px;
+
 %wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

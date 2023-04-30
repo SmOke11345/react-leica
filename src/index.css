@@ -27,17 +27,22 @@ body {
 }
 
 h1,
-h2,
-h3 {
-  font-size: 50px;
+h2 {
+  font-size: 35px;
   font-weight: 400;
 }
 
+h2 {
+  color: #797773;
+  text-align: center;
+}
+
 @media screen and (max-width: 576px) {
-  h1,
-h2,
-h3 {
-    font-size: calc(50px - 15px);
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: calc(35px - 13px);
   }
 }
 a {
@@ -49,6 +54,7 @@ a {
 p {
   font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.6em;
   font-weight: 500;
 }
 
