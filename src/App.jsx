@@ -4,12 +4,12 @@ import { Dignity } from './components/dignity/Dignity';
 import { Carousel } from './components/carousel/Carousel';
 
 import img from '../src/components/camera_img.svg';
-import style from './components/header/style.module.css';
+import styles from './components/header/style.module.css';
 
 function App() {
     return (
         <>
-            <div className={style.main_wrapper}>
+            <div className={styles.main_wrapper}>
                 <Header />
                 <Hero />
             </div>

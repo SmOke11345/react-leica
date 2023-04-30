@@ -1,16 +1,16 @@
-import style from './style.module.css';
+import styles from './style.module.css';
 
 export const Hero = () => {
     return (
-        <div className={style.container}>
-            <div className={style.hero}>
-                <div className={style.hero__title}>
+        <div className={styles.container}>
+            <div className={styles.hero}>
+                <div className={styles.hero__title}>
                     <h1>Leica Summilux-M 50 f/1.4 ASPH.</h1>
                 </div>
-                <div className={style.hero__subtitle}>
+                <div className={styles.hero__subtitle}>
                     <p>Новое поколение классических стандартных объективов</p>
                 </div>
-                <div className={style.btn}>
+                <div className={styles.btn}>
                     <a href="/">Подробнее</a>
                 </div>
             </div>

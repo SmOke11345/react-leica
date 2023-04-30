@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from './style.module.css';
+import styles from './style.module.css';
 import logo from './img/logo.svg';
 import burger from './img/burger.svg';
 import { Burger } from './Burger';
@@ -9,30 +9,30 @@ export const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <header className={style.header}>
-            <div className={style.wrapper}>
-                <div className={style.content_wrapper}>
-                    <div className={style.logo}>
+        <header className={styles.header}>
+            <div className={styles.wrapper}>
+                <div className={styles.content_wrapper}>
+                    <div className={styles.logo}>
                         <a href="/">
                             <img src={logo} alt="logo" />
                         </a>
                     </div>
                 </div>
-                <div className={style.content_wrapper}>
+                <div className={styles.content_wrapper}>
                     <img
                         src={burger}
                         alt="burger_menu"
-                        className={style.burger}
+                        className={styles.burger}
                         onClick={(event) => {
                             setIsOpen(!isOpen);
                         }}
                     />
                     <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-                    <nav className={style.nav}>
-                        <div className={style.nav__item}>
+                    <nav className={styles.nav}>
+                        <div className={styles.nav__item}>
                             <a href="/">Преимущества</a>
                         </div>
-                        <div className={style.nav__item}>
+                        <div className={styles.nav__item}>
                             <a href="/">Галерея</a>
                         </div>
                     </nav>
