@@ -5,21 +5,15 @@ import img2 from './img/img2.svg';
 import styles from './style.module.css';
 
 export const Dignity = () => {
-    const config = {
-        from: {
-            opacity: 0,
-        },
-        to: {
-            opacity: 1,
-            x: 0,
-        },
-    };
-
     const [refFirst, propsFirst] = useInView(
         () => ({
-            config,
             from: {
+                opacity: 0,
                 x: -500,
+            },
+            to: {
+                opacity: 1,
+                x: 0,
             },
         }),
         {},
@@ -27,9 +21,13 @@ export const Dignity = () => {
 
     const [refSecond, propsSecond] = useInView(
         () => ({
-            config,
             from: {
+                opacity: 0,
                 x: 500,
+            },
+            to: {
+                opacity: 1,
+                x: 0,
             },
         }),
         {},
