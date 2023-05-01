@@ -30,7 +30,7 @@ export const Carousel = () => {
         },
         exitBeforeEnter: true,
         config: { duration: 3000 },
-        delay: 1000,
+        delay: 500,
         ref: springApi,
     });
 
