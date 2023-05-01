@@ -2,13 +2,12 @@ import React, { useLayoutEffect, useState } from 'react';
 import { animated, useSpring, useSpringRef, useTransition } from '@react-spring/web';
 
 import img from './img/camera_img.svg';
+import carouselImg1 from './img/carousel_bg1.svg';
+import carouselImg2 from './img/carousel_bg2.svg';
+import carouselImg3 from './img/carousel_bg3.svg';
 import styles from './style.module.css';
 
-const images = [
-    '/src/components/carousel/img/carousel_bg1.svg',
-    '/src/components/carousel/img/carousel_bg2.svg',
-    '/src/components/carousel/img/carousel_bg3.svg',
-];
+const images = [carouselImg1, carouselImg2, carouselImg3];
 
 export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
