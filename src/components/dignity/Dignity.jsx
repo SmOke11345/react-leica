@@ -5,32 +5,32 @@ import img2 from './img/img2.svg';
 import styles from './style.module.css';
 
 export const Dignity = () => {
+    const config = {
+        from: {
+            opacity: 0,
+        },
+        to: {
+            opacity: 1,
+            x: 0,
+        },
+    };
+
     const [refFirst, propsFirst] = useInView(
         () => ({
+            config,
             from: {
-                opacity: 0,
-                x: -200,
+                x: -500,
             },
-            to: {
-                opacity: 1,
-                x: 0,
-            },
-            delay: 2000,
         }),
         {},
     );
 
     const [refSecond, propsSecond] = useInView(
         () => ({
+            config,
             from: {
-                opacity: 0,
-                x: 200,
+                x: 500,
             },
-            to: {
-                opacity: 1,
-                x: 0,
-            },
-            delay: 2000,
         }),
         {},
     );
