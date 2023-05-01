@@ -1,0 +1,11 @@
+@import '../../variables';
+@import '../../common';
+
+.section_bg {
+    background-color: $text-color;
+    padding: 100px 0;
+
+    .section:first-child {
+        margin-bottom: 100px;
+    }
+}

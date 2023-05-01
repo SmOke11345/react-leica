@@ -63,6 +63,11 @@
 .dignity:first-child {
   margin-bottom: 180px;
 }
+@media screen and (max-width: 576px) {
+  .dignity:first-child {
+    margin-bottom: 100px;
+  }
+}
 
 .title {
   width: 530px;

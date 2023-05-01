@@ -2,82 +2,82 @@
 @import '../../common';
 
 .header {
-  padding: 25px 40px;
-  background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: $medium) {
-  .header {
-	padding: 15px;
-  }
+    .header {
+        padding: 15px;
+    }
 }
 
 .burger {
-  display: none;
-  width: 54px;
-  cursor: pointer;
+    display: none;
+    width: 54px;
+    cursor: pointer;
 }
 
 .nav {
-  @extend %wrapper;
-  width: 350px;
+    @extend %wrapper;
+    width: 350px;
 
-  a {
-	color: $link-color;
-  }
+    a {
+        color: $link-color;
+    }
 }
 
 @media screen and (max-width: $medium) {
-  .nav {
-	display: none;
-  }
-  .burger {
-	display: block;
-  }
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
 }
 
 .logo {
-  width: 150px;
+    width: 150px;
 }
 
 .main_wrapper {
-  background: url('./img/main_bg 1.svg') no-repeat center;
-  background-size: cover;
+    background: url('./img/main_bg 1.svg') no-repeat center;
+    background-size: cover;
 }
 
 .overlay {
-  position: fixed;
-  display: none;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.96);
+    position: fixed;
+    display: none;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.96);
 
-  .burger {
-	position: absolute;
-	top: 15px;
-	right: 20px;
-  }
+    .burger {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
 
-  .content_wrapper {
-	padding: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-  }
+    .content_wrapper {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 
-  .nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin: 0 auto;
-	gap: 30px;
-  }
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 30px;
+    }
 }
 
 .show {
-  display: block;
+    display: block;
 }

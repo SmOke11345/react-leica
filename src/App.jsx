@@ -3,8 +3,8 @@ import { Hero } from './components/hero/Hero';
 import { Dignity } from './components/dignity/Dignity';
 import { Carousel } from './components/carousel/Carousel';
 
-import img from '../src/components/camera_img.svg';
 import styles from './components/header/style.module.css';
+import { Footer } from './components/footer/Footer';
 
 function App() {
     return (
@@ -15,11 +15,9 @@ function App() {
             </div>
             <main>
                 <Dignity />
-                <div>
-                    <img src={img} alt="Камера" />
-                </div>
                 <Carousel />
             </main>
+            <Footer />
         </>
     );
 }

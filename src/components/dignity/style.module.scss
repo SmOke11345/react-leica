@@ -11,6 +11,12 @@
   &:first-child {
 	margin-bottom: 180px;
   }
+
+  @media screen and (max-width: $small) {
+	&:first-child {
+	  margin-bottom: 100px;
+	}
+  }
 }
 
 .title {
