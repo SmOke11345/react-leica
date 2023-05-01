@@ -1,8 +1,40 @@
-import styles from './style.module.css';
+import { animated, useInView } from '@react-spring/web';
+
 import img1 from './img/img1.svg';
 import img2 from './img/img2.svg';
+import styles from './style.module.css';
 
 export const Dignity = () => {
+    const [refFirst, propsFirst] = useInView(
+        () => ({
+            from: {
+                opacity: 0,
+                x: -200,
+            },
+            to: {
+                opacity: 1,
+                x: 0,
+            },
+            delay: 2000,
+        }),
+        {},
+    );
+
+    const [refSecond, propsSecond] = useInView(
+        () => ({
+            from: {
+                opacity: 0,
+                x: 200,
+            },
+            to: {
+                opacity: 1,
+                x: 0,
+            },
+            delay: 2000,
+        }),
+        {},
+    );
+
     return (
         <>
             <section className={styles.dignity}>
@@ -12,7 +44,7 @@ export const Dignity = () => {
                             <h2>Сосредоточьтесь на мире, от 45 см до бесконечности</h2>
                         </div>
                     </div>
-                    <div className={styles.wrapper}>
+                    <animated.div ref={refFirst} style={propsFirst} className={styles.wrapper}>
                         <div className={styles.img}>
                             <img src={img1} alt="Объектив" />
                         </div>
@@ -23,7 +55,7 @@ export const Dignity = () => {
                                 фокусировки 45 сантиметров.
                             </p>
                         </div>
-                    </div>
+                    </animated.div>
                 </div>
             </section>
             <section className={styles.dignity}>
@@ -33,7 +65,7 @@ export const Dignity = () => {
                             <h2>Безупречная фотосъёмка</h2>
                         </div>
                     </div>
-                    <div className={styles.wrapper}>
+                    <animated.div ref={refSecond} style={propsSecond} className={styles.wrapper}>
                         <div className={styles.text}>
                             <p>
                                 Summilux-M 50 f/1,4 ASPH. позволяет снимать детальные крупные планы
@@ -44,7 +76,7 @@ export const Dignity = () => {
                         <div className={styles.img}>
                             <img src={img2} alt="Объектив" />
                         </div>
-                    </div>
+                    </animated.div>
                 </div>
             </section>
         </>
