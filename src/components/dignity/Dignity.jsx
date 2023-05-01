@@ -9,13 +9,13 @@ export const Dignity = () => {
         () => ({
             from: {
                 opacity: 0,
-                x: -500,
+                x: -200,
             },
             to: {
                 opacity: 1,
                 x: 0,
             },
-            delay: 3000,
+            delay: 2000,
         }),
         {},
     );
@@ -24,13 +24,13 @@ export const Dignity = () => {
         () => ({
             from: {
                 opacity: 0,
-                x: 500,
+                x: 200,
             },
             to: {
                 opacity: 1,
                 x: 0,
             },
-            delay: 3000,
+            delay: 2000,
         }),
         {},
     );
