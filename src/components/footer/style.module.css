@@ -54,11 +54,8 @@
     width: auto;
   }
 }
-.section_bg {
-  padding: 100px 0;
-}
-.section_bg .section:first-child {
-  margin-bottom: 100px;
+.footer {
+  background-color: #292929;
 }
 
 /*# sourceMappingURL=style.module.css.map */

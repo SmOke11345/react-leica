@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
 @font-face {
   font-family: "Days One";
-  src: url("./font/DaysOne-Regular.ttf");
+  src: url("font/DaysOne-Regular.ttf");
 }
 * {
   margin: 0;
@@ -27,7 +27,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: 35px;
   font-weight: 400;
 }

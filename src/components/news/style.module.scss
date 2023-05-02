@@ -1,0 +1,62 @@
+@import '../../variables';
+@import '../../common';
+
+.news {
+  .wrapper {
+	padding: 200px 0;
+  }
+
+  @media screen and (max-width: $large) {
+	.wrapper {
+	  flex-direction: column;
+	  gap: 100px;
+	}
+  }
+  @media screen and (max-width: $small) {
+	.wrapper {
+	  gap: 75px;
+	  padding: 150px 0;
+	}
+  }
+}
+
+.card_wrapper {
+  background-color: $text-color-secondary;
+  border-radius: 20px;
+}
+
+.card_inner {
+  padding: 15px 15px;
+}
+
+.card {
+  padding-top: 333px;
+  width: 500px;
+  border-radius: 20px;
+
+  &__title {
+	margin-bottom: 10px;
+
+	h3 {
+	  color: $title-color;
+	  font-size: calc(#{$font-h} - 10px);
+	}
+  }
+
+  &__btn {
+	display: flex;
+	justify-content: end;
+
+	a:before {
+	  content: url('../form/img/submit_btn.svg');
+	  height: 40px;
+	  width: 40px;
+	}
+  }
+}
+
+@media screen and (max-width: $small) {
+  .card {
+	width: 280px;
+  }
+}

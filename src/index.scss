@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Days One';
-    src: url('./font/DaysOne-Regular.ttf');
+    src: url('font/DaysOne-Regular.ttf');
 }
 
 * {
@@ -25,12 +25,13 @@ input {
 
 body {
     background: #ffffff;
-    color: $text-color;
+    color: $text-color-primary;
     font-family: 'Days One', sans-serif;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-size: $font-h;
     font-weight: 400;
 }
@@ -51,7 +52,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: $text-color;
+    color: $text-color-primary;
     font-size: 20px;
 }
 

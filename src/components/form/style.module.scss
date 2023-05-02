@@ -1,0 +1,82 @@
+@import '../../variables';
+@import '../../common';
+
+.form {
+  padding: 88px 0;
+  color: $text-color-secondary;
+
+  .wrapper {
+	justify-content: normal;
+	gap: 10px;
+  }
+
+  .content_wrapper:nth-child(2) {
+	padding-bottom: 20px;
+  }
+}
+
+.bg {
+  background: url('./img/form_banner.svg') no-repeat center center;
+  background-size: cover;
+}
+
+@media screen and (max-width: $medium) {
+  .form {
+	padding: 0;
+  }
+  .bg {
+	background: url("./img/form_bg_medium.svg") no-repeat center center;
+	background-size: cover;
+  }
+
+}
+
+
+.form_block {
+  padding: 184px 0;
+}
+
+label[for='input'] p {
+  font-size: calc(#{$font-p} - 4px);
+  margin-left: 15px;
+}
+
+.submit_btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.content_inner {
+  width: 720px;
+  position: relative;
+}
+
+@media screen and (max-width: $medium) {
+  .content_inner {
+	width: 100%;
+  }
+
+  .title h3 {
+	font-size: calc(#{$font-h} - 8px);
+  }
+  .subtitle p {
+	font-size: calc(#{$font-p} - 8px);
+  }
+}
+
+input[type='email'] {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Days One', sans-serif;
+  position: relative;
+}
+
+input[type='submit'] {
+  display: none;
+}

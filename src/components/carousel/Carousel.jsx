@@ -55,6 +55,11 @@ export const Carousel = () => {
     return (
         <div className={styles.section_bg}>
             <section className={styles.section}>
+                <div className={styles.camera_img}>
+                    <img src={img} alt="Камера" />
+                </div>
+            </section>
+            <section className={styles.section}>
                 <div className={styles.container}>
                     <div className={styles.content_wrapper}>
                         {transitions((springs, item) => (
@@ -63,11 +68,6 @@ export const Carousel = () => {
                             </animated.div>
                         ))}
                     </div>
-                </div>
-            </section>
-            <section className={styles.section}>
-                <div className={styles.camera_img}>
-                    <img src={img} alt="Камера" />
                 </div>
             </section>
         </div>

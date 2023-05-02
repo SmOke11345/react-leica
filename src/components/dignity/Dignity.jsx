@@ -15,7 +15,6 @@ export const Dignity = () => {
                 opacity: 1,
                 x: 0,
             },
-            delay: 2000,
         }),
         {},
     );
@@ -30,7 +29,6 @@ export const Dignity = () => {
                 opacity: 1,
                 x: 0,
             },
-            delay: 2000,
         }),
         {},
     );
