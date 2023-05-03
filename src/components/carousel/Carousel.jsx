@@ -36,7 +36,7 @@ export const Carousel = () => {
 
     const springs = useSpring({
         from: {
-            strokeDashoffset: 120,
+            strokeDashoffset: 140,
         },
         to: {
             strokeDashoffset: 0,
@@ -53,21 +53,19 @@ export const Carousel = () => {
     }, [activeIndex]);
 
     return (
-        <div className={styles.section_bg}>
-            <section className={styles.section}>
+        <section className={styles.section} id="carousel">
+            <div>
                 <div className={styles.camera_img}></div>
-            </section>
-            <section className={styles.section}>
-                <div className={styles.container}>
-                    <div className={styles.content_wrapper}>
-                        {transitions((springs, item) => (
-                            <animated.div style={springs}>
-                                <img src={images[item]} alt="Фото" />
-                            </animated.div>
-                        ))}
-                    </div>
+            </div>
+            <div className={styles.container}>
+                <div className={styles.content_wrapper}>
+                    {transitions((springs, item) => (
+                        <animated.div style={springs}>
+                            <img src={images[item]} alt="Фото" />
+                        </animated.div>
+                    ))}
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 };

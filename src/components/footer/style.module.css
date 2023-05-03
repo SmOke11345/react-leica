@@ -56,6 +56,37 @@
 }
 .footer {
   background-color: #292929;
+  color: #ffffff;
+}
+.footer .wrapper {
+  padding: 50px;
+}
+
+.nav__title {
+  margin-bottom: 5px;
+}
+.nav__title h3 {
+  font-size: calc(35px - 13px);
+}
+.nav__item a {
+  color: #ffffff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .wrapper {
+    padding: 50px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .wrapper {
+    flex-direction: column;
+    gap: 55px;
+    text-align: center;
+  }
+  .footer .wrapper .logo {
+    width: 73px;
+  }
 }
 
 /*# sourceMappingURL=style.module.css.map */

@@ -18,10 +18,14 @@ export const Burger = ({ isOpen, setIsOpen }) => {
                 <div className={styles.content_wrapper}>
                     <nav className={styles.nav}>
                         <div className={styles.nav__item}>
-                            <a href="/">Преимущества</a>
+                            <a href="/#dignity" onClick={(event) => setIsOpen(!isOpen)}>
+                                Преимущества
+                            </a>
                         </div>
                         <div className={styles.nav__item}>
-                            <a href="/">Галерея</a>
+                            <a href="/#carousel" onClick={(event) => setIsOpen(!isOpen)}>
+                                Галерея
+                            </a>
                         </div>
                     </nav>
                 </div>

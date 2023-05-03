@@ -2,5 +2,45 @@
 @import '../../common';
 
 .footer {
-    background-color: #292929;
+  background-color: #292929;
+  color: $text-color-secondary;
+
+  .wrapper {
+	padding: 50px;
+  }
+}
+
+.nav {
+  &__title {
+	margin-bottom: 5px;
+
+	h3 {
+	  font-size: calc(#{$font-h} - 13px);
+	}
+  }
+
+  &__item a {
+	color: $text-color-secondary;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+}
+
+@media screen and (max-width: $large) {
+  .footer .wrapper {
+	padding: 50px 40px;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .footer .wrapper {
+
+	flex-direction: column;
+	gap: 55px;
+	text-align: center;
+
+	.logo {
+	  width: 73px;
+	}
+
+  }
 }

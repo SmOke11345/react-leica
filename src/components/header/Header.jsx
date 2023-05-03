@@ -1,9 +1,9 @@
 import React from 'react';
+import { Burger } from './Burger';
 
-import styles from './style.module.css';
 import logo from './img/logo.svg';
 import burger from './img/burger.svg';
-import { Burger } from './Burger';
+import styles from './style.module.css';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -30,10 +30,10 @@ export const Header = () => {
                     <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
                     <nav className={styles.nav}>
                         <div className={styles.nav__item}>
-                            <a href="/">Преимущества</a>
+                            <a href="/#dignity">Преимущества</a>
                         </div>
                         <div className={styles.nav__item}>
-                            <a href="/">Галерея</a>
+                            <a href="/#carousel">Галерея</a>
                         </div>
                     </nav>
                 </div>

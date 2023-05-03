@@ -1,30 +1,27 @@
 @import '../../variables';
 @import '../../common';
 
-.section_bg {
-    padding: 100px 0;
-
-    .section:first-child {
-        margin-bottom: 100px;
-    }
+.section {
+  padding: 50px 0;
+  gap: 100px;
+  display: grid;
 }
 
 .camera_img {
-    background: url('./img/camera_img.svg') no-repeat center center;
-    background-size: cover;
-    width: auto;
-    min-height: 656px;
-    max-height: 836px;
+  background: url('./img/camera_img.svg') no-repeat center center;
+  background-size: cover;
+  width: auto;
+  min-height: 656px;
+  max-height: 836px;
 }
 
 @media screen and (max-width: $small) {
-    .camera_img,
-    .section:first-child .container {
-        min-height: 306px;
-    }
+  .camera_img {
+	min-height: 306px;
+  }
 
-    .section:last-child .container {
-        width: 100%;
-        padding: 0;
-    }
+  .section .container {
+	width: 100%;
+	padding: 0;
+  }
 }

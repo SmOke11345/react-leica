@@ -54,11 +54,10 @@
     width: auto;
   }
 }
-.section_bg {
-  padding: 100px 0;
-}
-.section_bg .section:first-child {
-  margin-bottom: 100px;
+.section {
+  padding: 50px 0;
+  gap: 100px;
+  display: grid;
 }
 
 .camera_img {
@@ -70,11 +69,10 @@
 }
 
 @media screen and (max-width: 576px) {
-  .camera_img,
-.section:first-child .container {
+  .camera_img {
     min-height: 306px;
   }
-  .section:last-child .container {
+  .section .container {
     width: 100%;
     padding: 0;
   }
