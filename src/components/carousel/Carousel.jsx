@@ -55,9 +55,7 @@ export const Carousel = () => {
     return (
         <div className={styles.section_bg}>
             <section className={styles.section}>
-                <div className={styles.camera_img}>
-                    <img src={img} alt="Камера" />
-                </div>
+                <div className={styles.camera_img}></div>
             </section>
             <section className={styles.section}>
                 <div className={styles.container}>
