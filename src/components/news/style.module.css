@@ -102,8 +102,8 @@
 }
 
 @media screen and (max-width: 576px) {
-  .card {
-    width: 280px;
+  .card, .card_wrapper {
+    width: 100%;
   }
 }
 

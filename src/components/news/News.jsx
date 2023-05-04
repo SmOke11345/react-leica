@@ -31,7 +31,8 @@ export const News = () => {
                         <div className={styles.card_wrapper}>
                             <div
                                 className={styles.card}
-                                style={{ background: `url(${item.img}) no-repeat top center` }}>
+                                style={{ background: `url(${item.img}) no-repeat top center` }}
+                            >
                                 <div className={styles.card_inner} key={index}>
                                     <div className={styles.card__title}>
                                         <h3>{item.name.title}</h3>
