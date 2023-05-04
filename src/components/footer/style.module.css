@@ -32,21 +32,21 @@
 }
 
 .container {
-  width: 1160px;
+  width: 1150px;
   max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 992px) {
   .container {
-    width: 980px;
+    width: 970px;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
-    width: 740px;
+    width: 730px;
   }
 }
 @media screen and (max-width: 576px) {
