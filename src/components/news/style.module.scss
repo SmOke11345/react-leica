@@ -56,7 +56,8 @@
 }
 
 @media screen and (max-width: $small) {
+  .card_wrapper,
   .card {
-	width: 280px;
+	width: 100%;
   }
 }
