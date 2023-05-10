@@ -1,65 +1,64 @@
-@import '../../variables';
-@import '../../common';
+@import '../../assets/scss/all';
 
 .dignity {
-    margin: 60px 0 140px;
-    overflow: hidden;
+  margin: 60px 0 140px;
+  overflow: hidden;
 
-    .wrapper {
-        margin: 60px 0 0 0;
-    }
+  .wrapper {
+	margin: 60px 0 0 0;
+  }
 
-    &:first-child {
-        margin-bottom: 180px;
-    }
+  &:first-child {
+	margin-bottom: 180px;
+  }
 
-    @media screen and (max-width: $small) {
-        &:first-child {
-            margin-bottom: 100px;
-        }
-    }
+  @media screen and (max-width: $small) {
+	&:first-child {
+	  margin-bottom: 100px;
+	}
+  }
 }
 
 .title {
-    width: 530px;
-    margin: 0 auto;
+  width: 530px;
+  margin: 0 auto;
 
-    &::after {
-        content: '';
-        width: 150px;
-        height: 5px;
-        margin: 20px auto;
-        border-radius: 20px;
-        background-color: $link-color;
-        opacity: 0.5;
-        display: block;
-    }
+  &::after {
+	content: '';
+	width: 150px;
+	height: 5px;
+	margin: 20px auto;
+	border-radius: 20px;
+	background-color: $link-color;
+	opacity: 0.5;
+	display: block;
+  }
 }
 
 .text {
-    width: 400px;
+  width: 400px;
 }
 
 @media screen and (max-width: $small) {
-    .text p {
-        font-size: calc(#{$font-p} - 4px);
-    }
+  .text p {
+	font-size: calc(#{$font-p} - 4px);
+  }
 }
 
 @media screen and (max-width: $large) {
-    .dignity {
-        .wrapper {
-            flex-direction: column;
-            gap: 20px;
-        }
-    }
+  .dignity {
+	.wrapper {
+	  flex-direction: column;
+	  gap: 20px;
+	}
+  }
 
-    .title {
-        width: auto;
-    }
+  .title {
+	width: auto;
+  }
 
-    .text {
-        width: auto;
-        text-align: center;
-    }
+  .text {
+	width: auto;
+	text-align: center;
+  }
 }

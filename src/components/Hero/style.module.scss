@@ -1,40 +1,39 @@
-@import '../../variables';
-@import '../../common';
+@import '../../assets/scss/all';
 
 .hero {
-    width: 531px;
-    display: grid;
-    gap: 10px;
-    padding: 210px 0;
+  width: 531px;
+  display: grid;
+  gap: 10px;
+  padding: 210px 0;
 
-    &__title,
-    &__subtitle {
-        color: #ffffff;
-    }
+  &__title,
+  &__subtitle {
+	color: #ffffff;
+  }
 
-    &__title h1 {
-        font-size: calc(#{$font-h} + 30px);
-    }
+  &__title h1 {
+	font-size: calc(#{$font-h} + 30px);
+  }
 
-    @media screen and (max-width: 768px) {
-        &__title h1 {
-            font-size: calc(#{$font-h} + 15px);
-        }
-    }
+  @media screen and (max-width: 768px) {
+	&__title h1 {
+	  font-size: calc(#{$font-h} + 15px);
+	}
+  }
 
-    &__subtitle {
-        width: 306px;
-    }
+  &__subtitle {
+	width: 306px;
+  }
 }
 
 @media screen and (max-width: $small) {
-    .hero {
-        padding: 150px 0;
-    }
+  .hero {
+	padding: 150px 0;
+  }
 
-    .hero,
-    .btn,
-    .hero__subtitle, {
-        width: 100%;
-    }
+  .hero,
+  .btn,
+  .hero__subtitle, {
+	width: 100%;
+  }
 }

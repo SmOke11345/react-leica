@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+
 @font-face {
-  font-family: "Days One";
-  src: url("font/DaysOne-Regular.ttf");
+  font-family: 'Days One';
+  src: url('../font/DaysOne-Regular.ttf');
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,39 +25,40 @@ input {
 
 body {
   background: #ffffff;
-  color: #000000;
-  font-family: "Days One", sans-serif;
+  color: $text-color-primary;
+  font-family: 'Days One', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-size: 35px;
+  font-size: $font-h;
   font-weight: 400;
 }
 
 h2 {
-  color: #797773;
+  color: $title-color;
   text-align: center;
 }
 
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 35px;
+	font-size: $font-h;
   }
   h2 {
-    font-size: calc(35px - 13px);
+	font-size: calc(#{$font-h} - 13px);
   }
 }
+
 a {
   text-decoration: none;
-  color: #000000;
+  color: $text-color-primary;
   font-size: 20px;
 }
 
 p {
-  font-size: 20px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: $font-p;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.6em;
   font-weight: 500;
 }
@@ -89,5 +93,3 @@ ul li {
 ::-webkit-scrollbar-thumb:hover {
   background: #908c8c;
 }
-
-/*# sourceMappingURL=index.css.map */
