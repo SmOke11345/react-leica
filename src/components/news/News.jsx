@@ -6,6 +6,7 @@ import styles from './style.module.css';
 const News = () => {
     const news = [
         {
+            id: 0,
             name: {
                 title: 'Черно-белая фотография Leica',
                 subtitle: '#StoryInMonochrome',
@@ -14,6 +15,7 @@ const News = () => {
             href: 'https://leica-camera.com/ru-RU/fotografiya/black-and-white',
         },
         {
+            id: 1,
             name: {
                 title: 'М-Объективы',
                 subtitle: 'Властелины мгновений',
@@ -27,20 +29,20 @@ const News = () => {
         <section className={styles.news}>
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    {news.map((item, index) => (
-                        <div className={styles.card_wrapper}>
+                    {news.map((obj) => (
+                        <div className={styles.card_wrapper} key={obj.id}>
                             <div
                                 className={styles.card}
-                                style={{ background: `url(${item.img}) no-repeat top center` }}>
-                                <div className={styles.card_inner} key={index}>
+                                style={{ background: `url(${obj.img}) no-repeat top center` }}>
+                                <div className={styles.card_inner}>
                                     <div className={styles.card__title}>
-                                        <h3>{item.name.title}</h3>
+                                        <h3>{obj.name.title}</h3>
                                     </div>
                                     <div className={styles.card__subtitle}>
-                                        <p>{item.name.subtitle}</p>
+                                        <p>{obj.name.subtitle}</p>
                                     </div>
                                     <div className={styles.card__btn}>
-                                        <a href={item.href}></a>
+                                        <a href={obj.href}></a>
                                     </div>
                                 </div>
                             </div>
