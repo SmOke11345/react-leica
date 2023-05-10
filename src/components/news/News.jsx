@@ -3,7 +3,7 @@ import img2 from './img/news_img1.svg';
 
 import styles from './style.module.css';
 
-export const News = () => {
+const News = () => {
     const news = [
         {
             name: {
@@ -31,8 +31,7 @@ export const News = () => {
                         <div className={styles.card_wrapper}>
                             <div
                                 className={styles.card}
-                                style={{ background: `url(${item.img}) no-repeat top center` }}
-                            >
+                                style={{ background: `url(${item.img}) no-repeat top center` }}>
                                 <div className={styles.card_inner} key={index}>
                                     <div className={styles.card__title}>
                                         <h3>{item.name.title}</h3>
@@ -52,3 +51,4 @@ export const News = () => {
         </section>
     );
 };
+export default News;

@@ -9,7 +9,7 @@ import styles from './style.module.css';
 
 const images = [carouselImg1, carouselImg2, carouselImg3];
 
-export const Carousel = () => {
+const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const springApi = useSpringRef();
 
@@ -53,7 +53,7 @@ export const Carousel = () => {
     }, [activeIndex]);
 
     return (
-        <div className={styles.section} id='carousel'>
+        <div className={styles.section} id="carousel">
             <div>
                 <div className={styles.camera_img}></div>
             </div>
@@ -61,7 +61,7 @@ export const Carousel = () => {
                 <div className={styles.content_wrapper}>
                     {transitions((springs, item) => (
                         <animated.div style={springs}>
-                            <img src={images[item]} alt='Фото' />
+                            <img src={images[item]} alt="Фото" />
                         </animated.div>
                     ))}
                 </div>
@@ -69,3 +69,4 @@ export const Carousel = () => {
         </div>
     );
 };
+export default Carousel;

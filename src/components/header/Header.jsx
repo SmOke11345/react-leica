@@ -5,7 +5,7 @@ import logo from './img/logo.svg';
 import burger from './img/burger.svg';
 import styles from './style.module.css';
 
-export const Header = () => {
+const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
@@ -41,3 +41,4 @@ export const Header = () => {
         </header>
     );
 };
+export default Header;
