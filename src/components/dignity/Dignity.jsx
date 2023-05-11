@@ -4,7 +4,7 @@ import img1 from './img/img1.svg';
 import img2 from './img/img2.svg';
 import styles from './style.module.css';
 
-const Dignity = () => {
+export const Dignity = () => {
     const [refFirst, propsFirst] = useInView(
         () => ({
             from: {
@@ -86,4 +86,4 @@ const Dignity = () => {
         </>
     );
 };
-export default Dignity;
+
