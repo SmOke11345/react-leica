@@ -17,11 +17,6 @@
 	  font-size: calc(#{$font-h} - 13px);
 	}
   }
-
-  &__item a {
-	color: $text-color-secondary;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
-  }
 }
 
 @media screen and (max-width: $large) {

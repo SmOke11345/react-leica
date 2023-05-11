@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Burger } from './Burger';
+import Links from '../Links';
 
 import logo from './img/logo.svg';
 import burger from './img/burger.svg';
 import styles from './style.module.css';
 
 const Header = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <header className={styles.header}>
@@ -29,12 +30,7 @@ const Header = () => {
                     />
                     <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
                     <nav className={styles.nav}>
-                        <div className={styles.nav__item}>
-                            <a href="/#dignity">Преимущества</a>
-                        </div>
-                        <div className={styles.nav__item}>
-                            <a href="/#carousel">Галерея</a>
-                        </div>
+                        <Links />
                     </nav>
                 </div>
             </div>

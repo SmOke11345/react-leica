@@ -1,55 +1,56 @@
 @import 'variables';
 
 .btn {
-    width: 180px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #d9d9d9;
-    transition: all 0.5s ease-in-out;
+  width: 180px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #d9d9d9;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
-    a {
-        display: block;
-        padding: 20px 0;
-        color: $text-color-primary;
-        font-family: 'Days One', sans-serif;
+  a {
+	display: block;
+	padding: 20px 0;
+	color: $text-color-primary;
+	font-family: 'Days One', sans-serif;
 
-        &:hover {
-            color: #ffffff;
-        }
-    }
+	&:hover {
+	  color: #ffffff;
+	}
+  }
 
-    &:hover {
-        background-color: #b3adad;
-        transform: scale(1.05);
-    }
+  &:hover {
+	background-color: #b3adad;
+	transform: scale(1.05);
+  }
 }
 
 .container {
-    width: 1150px;
-    max-width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 10px;
+  width: 1150px;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: $large) {
-    .container {
-        width: 970px;
-    }
+  .container {
+	width: 970px;
+  }
 }
 
 @media screen and (max-width: $medium) {
-    .container {
-        width: 730px;
-    }
+  .container {
+	width: 730px;
+  }
 }
 
 @media screen and (max-width: $small) {
-    .container {
-        width: auto;
-    }
+  .container {
+	width: auto;
+  }
 }
 
 .wrapper {
-    @extend %wrapper;
+  @extend %wrapper;
 }

@@ -1,3 +1,5 @@
+import Links from '../Links';
+
 import img from './img/footer_logo.svg';
 import styles from './style.module.scss';
 
@@ -16,12 +18,7 @@ const Footer = () => {
                             <div className={styles.nav__title}>
                                 <h3>Меню:</h3>
                             </div>
-                            <div className={styles.nav__item}>
-                                <a href="/#dignity">Преимущества</a>
-                            </div>
-                            <div className={styles.nav__item}>
-                                <a href="/#carousel">Галерея</a>
-                            </div>
+                            <Links />
                         </nav>
                     </div>
                     <div className={styles.content_wrapper}>

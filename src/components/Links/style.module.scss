@@ -1,0 +1,12 @@
+@import "../../assets/scss/variables";
+
+footer {
+  .nav {
+	&__item a {
+	  color: $text-color-secondary;
+	  font-family: 'M PLUS Rounded 1c', sans-serif;
+	  cursor: pointer;
+	}
+  }
+}
+

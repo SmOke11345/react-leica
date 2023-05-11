@@ -16,6 +16,7 @@
   text-align: center;
   background-color: #d9d9d9;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .btn a {
   display: block;
@@ -67,10 +68,6 @@
 }
 .nav__title h3 {
   font-size: calc(35px - 13px);
-}
-.nav__item a {
-  color: #ffffff;
-  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 @media screen and (max-width: 992px) {

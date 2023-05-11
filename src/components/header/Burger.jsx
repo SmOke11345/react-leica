@@ -1,7 +1,9 @@
 import React from 'react';
+import { RemoveScroll } from 'react-remove-scroll';
+import { Link } from 'react-scroll';
+
 import styles from './style.module.css';
 import burgerClose from './img/burger_close.svg';
-import { RemoveScroll } from 'react-remove-scroll';
 
 export const Burger = ({ isOpen, setIsOpen }) => {
     return (
@@ -18,14 +20,22 @@ export const Burger = ({ isOpen, setIsOpen }) => {
                 <div className={styles.content_wrapper}>
                     <nav className={styles.nav}>
                         <div className={styles.nav__item}>
-                            <a href="/#dignity" onClick={(event) => setIsOpen(!isOpen)}>
+                            <Link
+                                to="dignity"
+                                smooth={true}
+                                offset={-50}
+                                onClick={(event) => setIsOpen(!isOpen)}>
                                 Преимущества
-                            </a>
+                            </Link>
                         </div>
                         <div className={styles.nav__item}>
-                            <a href="/#carousel" onClick={(event) => setIsOpen(!isOpen)}>
+                            <Link
+                                to="carousel"
+                                smooth={true}
+                                offset={-50}
+                                onClick={(event) => setIsOpen(!isOpen)}>
                                 Галерея
-                            </a>
+                            </Link>
                         </div>
                     </nav>
                 </div>

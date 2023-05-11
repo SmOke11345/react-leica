@@ -9,11 +9,14 @@ const Dignity = () => {
         () => ({
             from: {
                 opacity: 0,
-                x: -200,
+                x: -225,
             },
             to: {
                 opacity: 1,
                 x: 0,
+            },
+            config: {
+                tension: 75,
             },
         }),
         {},
@@ -23,11 +26,14 @@ const Dignity = () => {
         () => ({
             from: {
                 opacity: 0,
-                x: 200,
+                x: 225,
             },
             to: {
                 opacity: 1,
                 x: 0,
+            },
+            config: {
+                tension: 75,
             },
         }),
         {},
@@ -66,9 +72,9 @@ const Dignity = () => {
                     <animated.div ref={refSecond} style={propsSecond} className={styles.wrapper}>
                         <div className={styles.text}>
                             <p>
-                                Summilux-M 50 f/1,4 ASPH. позволяет снимать детальные крупные планы
-                                благодаря двойному кулачковому механизму и минимальному расстоянию
-                                фокусировки 45 сантиметров.
+                                Summilux-M 50 f/1,4 ASPH., как всегда, компактен, а вес составляет
+                                всего 337 граммов. Снимки, которые он создает, выходят на совершенно
+                                новый уровень.
                             </p>
                         </div>
                         <div className={styles.img}>

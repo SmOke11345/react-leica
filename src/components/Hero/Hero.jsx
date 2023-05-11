@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll';
+
 import styles from './style.module.css';
 
 const Hero = () => {
@@ -11,7 +13,9 @@ const Hero = () => {
                     <p>Новое поколение классических стандартных объективов</p>
                 </div>
                 <div className={styles.btn}>
-                    <a href="/">Подробнее</a>
+                    <Link to="carousel" smooth={true} duration={2750} offset={-1000}>
+                        Подробнее
+                    </Link>
                 </div>
             </div>
         </div>
