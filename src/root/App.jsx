@@ -1,12 +1,11 @@
+import styles from './style.module.css';
+import Hero from '../components/Hero';
 import Header from '../components/header';
-import Hero from '../components/hero';
 import Dignity from '../components/dignity';
-import Carousel from '../components/carousel';
+import Carousel from '../components/carousel/Carousel';
 import Form from '../components/form';
 import News from '../components/news';
 import Footer from '../components/footer';
-
-import styles from './style.module.css';
 
 function App() {
     return (
