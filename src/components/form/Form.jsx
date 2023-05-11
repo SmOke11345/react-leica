@@ -2,7 +2,7 @@ import submitBtn from './img/submit_btn.svg';
 import post from './img/post.svg';
 import styles from './style.module.css';
 
-export const Form = () => {
+const Form = () => {
     return (
         <section className={styles.form}>
             <div className={styles.bg}>
@@ -39,4 +39,4 @@ export const Form = () => {
         </section>
     );
 };
-
+export default Form;

@@ -3,7 +3,7 @@ import Links from '../Links';
 import img from './img/footer_logo.svg';
 import styles from './style.module.scss';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -29,3 +29,4 @@ export const Footer = () => {
         </footer>
     );
 };
+export default Footer; 

@@ -3,7 +3,7 @@ import img2 from './img/news_img1.svg';
 
 import styles from './style.module.css';
 
-export const News = () => {
+const News = () => {
     const news = [
         {
             id: 0,
@@ -53,3 +53,5 @@ export const News = () => {
         </section>
     );
 };
+
+export default News;

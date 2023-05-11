@@ -9,7 +9,7 @@ import styles from './style.module.css';
 
 const images = [carouselImg1, carouselImg2, carouselImg3];
 
-export const Carousel = () => {
+const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const springApi = useSpringRef();
 
@@ -69,4 +69,4 @@ export const Carousel = () => {
         </div>
     );
 };
-
+export default Carousel;
