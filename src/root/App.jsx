@@ -1,10 +1,10 @@
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Dignity from '../components/Dignity';
-import Carousel from '../components/Carousel';
-import Form from '../components/Form';
-import News from '../components/News';
-import Footer from '../components/Footer';
+import Header from '../components/Header/Header';
+import Hero from '../components/Hero/Hero';
+import Dignity from '../components/Dignity/Dignity';
+import Carousel from '../components/Carousel/Carousel';
+import Form from '../components/Form/Form';
+import News from '../components/News/News';
+import Footer from '../components/Footer/Footer';
 
 import styles from './style.module.css';
 

@@ -13,7 +13,7 @@ const Hero = () => {
                     <p>Новое поколение классических стандартных объективов</p>
                 </div>
                 <div className={styles.btn}>
-                    <Link to="carousel" smooth={true} duration={2750} offset={-1000}>
+                    <Link to="carousel" smooth={true} duration={2750} offset={-800}>
                         Подробнее
                     </Link>
                 </div>
