@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 
 import styles from './style.module.css';
 
-const Hero = () => {
+export const Hero = () => {
     return (
         <div className={styles.container}>
             <div className={styles.hero}>
@@ -22,4 +22,3 @@ const Hero = () => {
     );
 };
 
-export default Hero;
