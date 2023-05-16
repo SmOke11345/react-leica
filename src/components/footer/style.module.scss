@@ -5,36 +5,36 @@
   color: $text-color-secondary;
 
   .wrapper {
-	padding: 50px;
+    padding: 50px;
   }
 }
 
 .nav {
   &__title {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 
-	h3 {
-	  font-size: calc(#{$font-h} - 13px);
-	}
+    h3 {
+      font-size: calc(#{$font-h} - 13px);
+    }
   }
 }
 
 @media screen and (max-width: $large) {
   .footer .wrapper {
-	padding: 50px 40px;
+    padding: 50px 40px;
   }
 }
 
 @media screen and (max-width: $medium) {
   .footer .wrapper {
+    padding: 50px 65px;
+    flex-direction: column;
+    gap: 55px;
+    text-align: center;
 
-	flex-direction: column;
-	gap: 55px;
-	text-align: center;
-
-	.logo {
-	  width: 73px;
-	}
+    .logo {
+      width: 73px;
+    }
 
   }
 }

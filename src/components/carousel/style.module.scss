@@ -5,7 +5,7 @@
 }
 
 .camera_img {
-  background: url('./img/camera_img.svg') no-repeat center center;
+  background: url('img/camera_img.png') no-repeat center center;
   background-size: cover;
   width: auto;
   min-height: 656px;
@@ -14,11 +14,11 @@
 
 @media screen and (max-width: $small) {
   .camera_img {
-	min-height: 306px;
+    min-height: 306px;
   }
 
   .section .container {
-	width: 100%;
-	padding: 0;
+    width: 100%;
+    padding: 0;
   }
 }

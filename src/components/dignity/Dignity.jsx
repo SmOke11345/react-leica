@@ -1,7 +1,7 @@
 import { animated, useInView } from '@react-spring/web';
 
-import img1 from './img/img1.svg';
-import img2 from './img/img2.svg';
+import img1 from './img/img1.png';
+import img2 from './img/img2.png';
 import styles from './style.module.css';
 
 const Dignity = () => {

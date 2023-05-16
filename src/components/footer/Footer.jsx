@@ -22,11 +22,11 @@ const Footer = () => {
                         </nav>
                     </div>
                     <div className={styles.content_wrapper}>
-                        <p>соpyright © 2023 Artyom Lymar</p>
+                        <p>&copy; Artyom Lymar, 2023 г. </p>
                     </div>
                 </div>
             </div>
         </footer>
     );
 };
-export default Footer; 
+export default Footer;

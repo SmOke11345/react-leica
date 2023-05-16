@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import { animated, useSpring, useSpringRef, useTransition } from '@react-spring/web';
 
-import img from './img/camera_img.svg';
 import carouselImg1 from './img/carousel_bg1.svg';
 import carouselImg2 from './img/carousel_bg2.svg';
 import carouselImg3 from './img/carousel_bg3.svg';
@@ -30,7 +29,7 @@ const Carousel = () => {
         },
         exitBeforeEnter: true,
         config: { duration: 3000 },
-        delay: 500,
+        delay: 700,
         ref: springApi,
     });
 
