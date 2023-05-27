@@ -35,7 +35,12 @@ const Form = () => {
                                 <p>Ваша электронная почта</p>
                             </label>
                             <div className={styles.content_inner}>
-                                <input type="email" id="input" placeholder="Leica@mail.ru" />
+                                <input
+                                    type="email"
+                                    id="input"
+                                    placeholder="Leica@mail.ru"
+                                    required={true}
+                                />
                                 <label htmlFor="submit" className={styles.submit_btn}>
                                     <svg
                                         width="40"

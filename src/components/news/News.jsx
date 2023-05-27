@@ -12,7 +12,7 @@ const News = () => {
                 subtitle: '#StoryInMonochrome',
             },
             img: img1,
-            href: 'https://leica-camera.com/ru-RU/fotografiya/black-and-white',
+            // href: 'https://leica-camera.com/ru-RU/fotografiya/black-and-white',
         },
         {
             id: 1,
@@ -21,7 +21,7 @@ const News = () => {
                 subtitle: 'Властелины мгновений',
             },
             img: img2,
-            href: 'https://leica-camera.com/ru-RU/fotografiya/obektivy/m',
+            // href: 'https://leica-camera.com/ru-RU/fotografiya/obektivy/m',
         },
     ];
 
@@ -42,7 +42,7 @@ const News = () => {
                                         <p>{obj.name.subtitle}</p>
                                     </div>
                                     <div className={styles.card__btn}>
-                                        <a href={obj.href}></a>
+                                        <a href="#"></a>
                                     </div>
                                 </div>
                             </div>
