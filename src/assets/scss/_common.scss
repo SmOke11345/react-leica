@@ -9,19 +9,19 @@
   cursor: pointer;
 
   a {
-	display: block;
-	padding: 20px 0;
-	color: $text-color-primary;
-	font-family: 'Days One', sans-serif;
+    display: block;
+    padding: 20px 0;
+    color: $text-color-primary;
+    font-family: 'Days One', sans-serif;
 
-	&:hover {
-	  color: #ffffff;
-	}
+    &:hover {
+      color: #ffffff;
+    }
   }
 
   &:hover {
-	background-color: #b3adad;
-	transform: scale(1.05);
+    background-color: #b3adad;
+    transform: scale(1.05);
   }
 }
 
@@ -35,19 +35,31 @@
 
 @media screen and (max-width: $large) {
   .container {
-	width: 970px;
+    width: 970px;
   }
 }
 
 @media screen and (max-width: $medium) {
   .container {
-	width: 730px;
+    width: 730px;
   }
 }
 
 @media screen and (max-width: $small) {
   .container {
-	width: auto;
+    width: auto;
+  }
+  .btn {
+    a {
+      &:hover {
+        color: $text-color-primary;
+      }
+    }
+
+    &:hover {
+      background-color: #d9d9d9;
+      transform: scale(1);
+    }
   }
 }
 
